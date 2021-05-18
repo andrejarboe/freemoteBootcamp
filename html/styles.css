@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+}
+
+h1 {
+  color: white;
+  background-color: cornflowerblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  font-size: 3rem;
+  /* relatice sizing relative to the html fontsize 3rem is 3 * the base you can chang the base in html font-size with px */
+  border: 1px solid rgb(255, 0, 0);
+}
+
+h2{
+    text-align: center;
+}
+
+.secondary{
+    color: blue;
+}
+
+#main-header{
+    font-size: 80px;
+
+}
+
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta
+      name="description"
+      content="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    />
+
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./index.js"></script>
+  </head>
+  <body style="background-color: #001c1c; color: #fff">
+    <h1 class="title-primary">My first Page</h1>
+    <h2>My Second Header</h2>
+    <a href="https://www.google.com">Go to Google</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quae ratione
+      corporis quas similique ad eius labore quam totam facere, incidunt beatae
+      et porro architecto suscipit perferendis obcaecati repellat asperiores.
+    </p>
+    <h2>List</h2>
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+      <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <ol>
+          <li>First</li>
+          <li>Second</li>
+          <li>Third</li>
+        </ol>
+      </ul>
+    </ol>
+
+    <h2>Buttons:</h2>
+    <button>Click Me Bro!</button>
+
+    <h2>Tables "Only uses in email":</h2>
+
+    <h2>Image:</h2>
+    <img src="./img/drake.png" alt="Drake says no" />
+
+    <h2>Form and Inputs:</h2>
+    <form action="/my-site/submit">
+      <label for="uname">Username</label>
+      <input type="text" id="uname" name="uname" />
+      <br />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" />
+      <br />
+      <label for="pw">Password</label>
+      <input type="password" id="pw" name="pw" />
+      <br />
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <br />
+      <input type="submit" />
+    </form>
+    <h3>Select Input</h3>
+    <form action="">
+      <div>
+        <label for="colors">Pick a color</label>
+        <select name="colors" id="colors">
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="blue">Blue</option>
+        </select>
+      </div>
+      <div>
+        <div>
+          <label for="first-opt" id="first-opt">First</label>
+          <input type="checkbox" />
+        </div>
+        <div>
+          <label for="Second-opt" id="second-opt">Second</label>
+          <input type="checkbox" />
+        </div>
+        <div>
+          <label for="third-opt" id="second-opt" checked>Third</label>
+          <input type="checkbox" />
+        </div>
+      </div>
+      <div>
+        <label for="single-opt">Select a single option</label>
+        <div>
+          <label for="a">A</label>
+          <input name="single-opt" type="radio" id="a" value="a" />
+        </div>
+        <div>
+          <label for="b">B</label>
+          <input name="single-opt" type="radio" id="b" value="b" />
+        </div>
+        <div>
+          <label for="c">C</label>
+          <input name="single-opt" type="radio" id="c" value="c" />
+        </div>
+      </div>
+    </form>
+
+    <h2>Style and script</h2>
+    <ul>
+        <li>Inline style will always win</li>
+    </ul>
+    <h2>Semantic Elements</h2>
+    <h2>Data Atributes</h2>
+    <div data-second-state="goodbye">Hello</div>
+    <p>iFrames</p>
+
+    <h2>CSS</h2>
+    <p>Think of selectors like search quires</p>
+    <h1 id="main-header">Let's talk selectors</h1>
+    <h2 class="sub-header">They're pretty simple</h2>
+    <h3 class="sub-header header-alt secondary">They're pretty simple. This h2 has specificity :)</h3>
+    <p>can break hirachy with an inline style</p>
+    <p>can break hirachy with !important but only use it when you have no other choice</p>
+
+    <h2>Colors</h2>
+    <p>how to find colors:</p>
+    <p>use color picker extention</p>
+    <p>color pallet: 
+      <a href="https://www.happyhues.co/" target="_blank">happyhues.co</a>
+    </p>
+  </body>
+</html>
