@@ -1,0 +1,30 @@
+#index, #footer{
+    background-color: #f1f1f1;
+    border: 1px solid grey;
+}
+
+#index > p{
+    font-weight: bold;
+    font-style: italic;
+  font-size: 2rem;
+    margin-left: 20px;
+
+}
+
+ul{
+    list-style: none;
+}
+
+ol li{
+    opacity: 1;
+    transition: .2s ease all;
+}
+ol li:hover{
+    cursor: pointer;
+    opacity: 0.6;
+    transition: .2s ease all;
+}
+
+ul li::before{
+    content: '✅';
+}
