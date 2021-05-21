@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Css for mobile</h1>
+      <h2>ft. Media Queries</h2>
+    </div>
+  </body>
+</html>
+
+<style>
+  .container {
+    background: dimgray;
+  }
+ 
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+      body{
+          font-size: 3rem;
+      }
+    .container {
+        background: cadetblue;
+        margin: 20px;
+
+      }
+  }
+
+
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    body{
+        font-size: 4rem;
+    }
+    .container {
+        background: forestgreen;
+        margin: 40px;
+      }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    
+  }
+</style>

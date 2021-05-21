@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Flex</h1>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
+
+<style>
+  .container {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box {
+    flex-grow: 1;
+    flex-basis: 100px;
+    height: 100px;
+    /* 
+    flex: 1 1 300px;
+    short hand
+    */
+  }
+  .box:nth-of-type(1) {
+    background-color: aquamarine;
+  }
+  .box:nth-of-type(2) {
+    background-color: darkslategrey;
+  }
+  .box:nth-of-type(3) {
+    background-color: burlywood;
+    flex-shrink: 0;
+  }
+  .box:nth-of-type(4) {
+    background-color: royalblue;
+  }
+  .box:nth-of-type(5) {
+    background-color: darkorange;
+  }
+  .box:nth-of-type(6) {
+    background-color: blueviolet;
+  }
+</style>
