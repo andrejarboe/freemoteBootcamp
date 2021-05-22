@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  background-color: #f1f1f1;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px 0;
+}
+
+.container {
+  width: 350px;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 100%;
+}
