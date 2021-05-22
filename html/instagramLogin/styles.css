@@ -4,17 +4,102 @@
 
 body {
   display: flex;
-  background-color: #f1f1f1;
+  background-color: #FAFAFA;
+  align-items: center;
   justify-content: center;
-  height: 100vh;
+  flex-direction: column;
   padding: 20px 0;
+}
+
+img {
+  width: 100%;
 }
 
 .container {
   width: 350px;
   margin-top: 20px;
+  padding: 0 40px;
+
 }
 
-.logo img {
-  width: 100%;
+.box {
+    background-color: #FFFFFF;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  padding: 10px 40px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin-bottom: 6px;
+    height: 32px;
+}
+
+
+input[type='text'],
+input[type='password']{
+    border: 1px solid rgba(var(--ca6,219,219,219),1);
+    background: rgba(var(--b3f,250,250,250),1);
+    padding-left: 8px;
+    font-size: 11px;
+
+
+}
+
+input[type='submit']{
+    margin-top: 8px;
+    border: 0 solid #000;
+    background-color: rgba(var(--d69,0,149,246),.3);
+    opacity: 1;
+    color: rgba(var(--eca,255,255,255),1);
+
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+}
+
+.or p{
+    margin: 0 18px;
+    position: relative;
+}
+
+.bar{
+    content: ' ';
+    border-top: 1px solid #DBDBDB;
+    flex-grow: 1;
+    transform: translateY(50%);
+}
+
+
+.signup p {
+  margin: 15px;
+}
+
+.app {
+  text-align: center;
+}
+
+.app-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.app-logos img {
+  height: 40px;
+}
+
+.app-store {
+  margin-right: 8px;
+}
+
+footer {
+  display: flex;
 }
