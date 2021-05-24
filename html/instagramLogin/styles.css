@@ -1,98 +1,151 @@
 * {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
   display: flex;
-  background-color: #FAFAFA;
+  min-height: 100vh;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  padding: 20px 0;
+  background-color: #fafafa;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 350px;
-  margin-top: 20px;
-  padding: 0 40px;
-
+  /* height: 70vh; */
+  margin-top: 140px;
+  /* flex: 1; */
 }
 
 .box {
-    background-color: #FFFFFF;
   border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   padding: 10px 40px;
+  background-color: #ffffff;
   margin-bottom: 10px;
   text-align: center;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
+/* form  */
+.form-container {
+  display: flex;
+  flex-direction: column;
 }
 
-input{
-    margin-bottom: 6px;
-    height: 32px;
+input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 6px;
+  height: 36px;
+  border-radius: 3px;
 }
 
-
-input[type='text'],
-input[type='password']{
-    border: 1px solid rgba(var(--ca6,219,219,219),1);
-    background: rgba(var(--b3f,250,250,250),1);
-    padding-left: 8px;
-    font-size: 11px;
-
-
+input[type="text"],
+input[type="password"] {
+  border: 1px solid rgba(var(--ca6, 219, 219, 219), 1);
+  background: rgba(var(--b3f, 250, 250, 250), 1);
+  padding-left: 8px;
+  font-size: 11px;
 }
 
-input[type='submit']{
-    margin-top: 8px;
-    border: 0 solid #000;
-    background-color: rgba(var(--d69,0,149,246),.3);
-    opacity: 1;
-    color: rgba(var(--eca,255,255,255),1);
-
+input[type="submit"] {
+  margin-top: 8px;
+  border: 0 solid #000;
+  background-color: rgba(var(--d69, 0, 149, 246), 0.3);
+  opacity: 1;
+  color: rgba(var(--eca, 255, 255, 255), 1);
+  height: 30px;
 }
 
-.or{
-    display: flex;
-    flex-direction: row;
+/* OR */
+.or {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 18px;
 }
 
-.or p{
-    margin: 0 18px;
-    position: relative;
+.or p {
+  margin: 0 18px;
+  position: relative;
+  color: #8e8e8e;
+  font-size: 12px;
 }
 
-.bar{
-    content: ' ';
-    border-top: 1px solid #DBDBDB;
-    flex-grow: 1;
-    transform: translateY(50%);
+.bar {
+  content: " ";
+  border-top: 1px solid #dbdbdb;
+  flex-grow: 1;
+  transform: translateY(50%);
 }
 
-
-.signup p {
-  margin: 15px;
+/* facebook  */
+.facebook {
+  margin: 8px 0;
 }
 
-.app {
+.fb-blue {
+  color: #385185;
+}
+
+.icon {
+  max-height: 16px;
+  max-width: 16px;
+  vertical-align: middle;
+}
+
+.facebook span {
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.pw-forgot {
+  margin-top: 14px;
+  font-size: 12px;
+}
+
+/* Sign up */
+.sign-up-conainer {
+  margin-bottom: 10px;
+  padding: 10px 0;
+}
+
+.sign-up-conainer p {
+  margin: 15px 0; 
+  font-size: 14px;
+}
+.sign-up-conainer a {
+  color: #0095f7;
+}
+
+/* app */
+.get-app {
   text-align: center;
+  margin-top: 20px;
 }
 
-.app-logos {
+.get-app p {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.app-stores {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.app-logos img {
+.app-stores img {
   height: 40px;
 }
 
@@ -100,6 +153,64 @@ input[type='submit']{
   margin-right: 8px;
 }
 
+/* footer  */
 footer {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  text-align: center;
+  color: #8e8e8e;
+  font-size: 12px;
+  margin-bottom: 50px;
+}
+
+footer a {
+  padding: 0 5px;
+  color: #8e8e8e;
+}
+
+.footer-menu,
+footer form {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 800px;
+  padding: 0 10px;
+}
+
+footer form {
+  margin: 12px 0;
+}
+
+/* Large screen */
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 800px;
+    display: flex;
+  }
+  .content-container {
+    width: 50%;
+    height: 100%;
+  }
+  .image-container {
+    width: 50%;
+    height: 650px;
+    margin-right: 20px;
+    background: top/100% url(https://i.ibb.co/qpVpsgL/ig-phone.png) no-repeat;
+  }
+
+  .get-app p {
+    margin-top: 40px;
+  }
+  
+  .app-stores{
+    margin-top: 40px;
+  }
 }

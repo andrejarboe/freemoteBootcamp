@@ -4,64 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Instagram| Login</title>
+    <title>Document</title>
 
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <!-- container  -->
     <div class="container">
-      <div class="login box">
-        <!-- login box -->
-        <div class="logo">
+        <!-- img container  -->
+        <div class="image-container">
+          
+        </div>
+        <!-- img container end -->
+
+        <!-- content contianer -->
+        <div class="content-container">
+      <!-- form container  -->
+      <div class="form-container">
+        <!-- top container  -->
+        <div class="login-container box">
           <img
             src="https://assets.codepen.io/6060109/ig-logo.png"
             alt="Instagram logo"
           />
-        </div>
-        <!-- form start  -->
-        <form action="">
-            <input type="text" placeholder="Phone number, username, or email">
-            <input type="password" placeholder="Password">
-            <input type="submit" value="Log in">
+          <form action="">
+            <input type="text" placeholder="Phone number, username, or email" />
+            <input type="password" placeholder="Password" />
+            <input type="submit" value="Log in" />
+          </form>
           <div class="or">
             <div class="bar"></div>
             <p>OR</p>
             <div class="bar"></div>
           </div>
-          <!-- facebook   -->
-          <p>
-            <img src="" alt="" />
-            Log in with Facebook
-          </p>
-          <!-- facebook  end -->
-          <div class="pw-forgot">
-            <a href="#">Forgot Password?</a>
+          <div class="facebook">
+            <a class="fb-blue" href="">
+              <img
+                class="icon fb-blue"
+                src="./icons8-facebook.svg"
+                alt="facebook"
+              />
+              <span> Log in with Facebook </span>
+            </a>
+            <div class="pw-forgot">
+              <a class="fb-blue" href="#">Forgot Password?</a>
+            </div>
           </div>
-        </form>
-        <!-- form end  -->
+        </div>
+        <!-- top container end  -->
       </div>
-      <!-- login box end -->
-
-      <div class="signup box">
-        <!-- Sign up box -->
+      <!-- form container end -->
+      <!-- sign up container  -->
+      <div class="sign-up-conainer box">
         <p>
-          Don't have an account?
+          Dont have an account?
           <a href="#">Sign up</a>
         </p>
       </div>
-      <!-- Sign up box end -->
-
-      <div class="app">
-        <!-- app  -->
+      <!-- sign up container end -->
+      <!-- Get the app  -->
+      <div class="get-app">
         <p>Get the app.</p>
-        <div class="app-logos">
-          <a class="app-store" href="">
+        <div class="app-stores">
+          <a class="app-store" href="#">
             <img
               src="https://assets.codepen.io/6060109/IG-app-store-button.png"
               alt="Apple app store button"
             />
           </a>
-          <a href="">
+          <a href="#">
             <img
               src="https://assets.codepen.io/6060109/IG-Google-Play-Button.png"
               alt="Google play store logo"
@@ -69,26 +80,40 @@
           </a>
         </div>
       </div>
-      <!-- app end -->
+      <!-- Get the app end -->
     </div>
-    <!-- container end -->
+    <!-- content contianer -->
+
+    </div>
+    <!-- container end  -->
     <footer>
-      <div class="menu">
-        <!-- footer-->
-        <div class="footer-container">
-          <a href="">About</a>
-          <a href="">Blog</a>
-          <a href="">Jobs</a>
-          <a href="">Help</a>
-          <a href="">API</a>
-          <a href="">Privacy</a>
-          <a href="">Terms</a>
-          <a href="">Top Accounts</a>
-          <a href="">Hashtags</a>
-          <a href="">Locations</a>
-        </div>
+      <div class="footer-menu">
+        <a href="">About</a>
+        <a href="">Blog</a>
+        <a href="">Jobs</a>
+        <a href="">Help</a>
+        <a href="">API</a>
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+        <a href="">Top Accounts</a>
+        <a href="">Hashtags</a>
+        <a href="">Locations</a>
       </div>
-      <!-- Menu end-->
+      <form action="">
+        <select name="" id="">
+          <option value="">Mandarin Chinese</option>
+          <option value="">Spanish</option>
+          <option value="" selected>English</option>
+          <option value="">Hindi</option>
+          <option value="">Bengali</option>
+          <option value="">Portuguese</option>
+          <option value="">Russian</option>
+          <option value="">Japanese</option>
+          <option value="">Western Punjabi[10]</option>
+          <option value="">Marathi</option>
+        </select>
+        © 2021 Instagram from Facebook
+      </form>
     </footer>
   </body>
 </html>
